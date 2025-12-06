@@ -6,18 +6,18 @@
 
 **Summary**
 
+
 **How To**: 
 
 **Delivery URL**
 - Cup
 ```text
-Dataset:
-Excluded Dataset:
-Model:
+Dataset:https://huggingface.co/datasets/AmdRamen/mission2_record_cup
+Model:https://huggingface.co/AmdRamen/mission2_cup
 ```
 - Bottle
 ```text
-Dataset:
-Excluded Dataset:
-Model:
+Dataset:https://huggingface.co/datasets/AmdRamen/mission2_record_bottle
+Excluded Dataset:https://huggingface.co/datasets/AmdRamen/mission2_record_bottle_edited
+Model:https://huggingface.co/AmdRamen/mission2_bottle
 ```
