@@ -1,0 +1,16 @@
+lerobot-record \
+    --robot.type=so101_follower \
+    --robot.port=/dev/ttyACM1 \
+    --robot.id=my_awesome_follower_arm \
+    --robot.cameras="{top: {type: opencv, index_or_path: 4, width: 640, height: 480, fps: 30}, side: {type: opencv, index_or_path: 6, width: 640, height: 480, fps: 30}}" \
+    --teleop.type=so101_leader \
+    --teleop.port=/dev/ttyACM0 \
+    --teleop.id=my_awesome_leader_arm \
+    --display_data=true \
+    --dataset.repo_id=AmdRamen/mission1_record \
+    --dataset.num_episodes=20 \
+    --dataset.episode_time_s=20 \
+    --dataset.reset_time_s=10 \
+    --dataset.single_task="put the pen in the white square" \
+    --dataset.root=${HOME}/hackathon_ramen/outputs/so101_dataset/ \
+    --dataset.push_to_hub=True

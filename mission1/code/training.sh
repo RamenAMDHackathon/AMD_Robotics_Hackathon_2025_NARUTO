@@ -1,0 +1,11 @@
+lerobot-train \
+  --dataset.repo_id=AmdRamen/mission1_record_edited \
+  --policy.type=act \
+  --output_dir=outputs/train/act_so101_test \
+  --job_name=act_so101_mission1 \
+  --policy.device=cuda \
+  --wandb.enable=true \
+  --policy.repo_id=AmdRamen/mission1_model_100k \
+  --policy.push_to_hub=True \
+  --wandb.entity=amd_hackathon_ramen \
+  --wandb.project=mission1
