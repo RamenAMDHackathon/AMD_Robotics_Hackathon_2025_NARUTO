@@ -1,0 +1,11 @@
+{"time":"2025-12-06T00:12:39.214171866Z","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-12-06T00:12:39.48108145Z","level":"INFO","msg":"stream: created new stream","id":"iwarsqft"}
+{"time":"2025-12-06T00:12:39.481110041Z","level":"INFO","msg":"stream: started","id":"iwarsqft"}
+{"time":"2025-12-06T00:12:39.481118276Z","level":"INFO","msg":"writer: started","stream_id":"iwarsqft"}
+{"time":"2025-12-06T00:12:39.481130889Z","level":"INFO","msg":"sender: started","stream_id":"iwarsqft"}
+{"time":"2025-12-06T00:12:39.481191606Z","level":"INFO","msg":"handler: started","stream_id":"iwarsqft"}
+{"time":"2025-12-06T01:35:59.231268509Z","level":"INFO","msg":"stream: closing","id":"iwarsqft"}
+{"time":"2025-12-06T01:35:59.525860275Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-06T01:35:59.65556827Z","level":"INFO","msg":"handler: closed","stream_id":"iwarsqft"}
+{"time":"2025-12-06T01:35:59.655622128Z","level":"INFO","msg":"sender: closed","stream_id":"iwarsqft"}
+{"time":"2025-12-06T01:35:59.655629822Z","level":"INFO","msg":"stream: closed","id":"iwarsqft"}

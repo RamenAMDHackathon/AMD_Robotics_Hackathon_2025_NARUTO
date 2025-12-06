@@ -1,0 +1,257 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.12.3
+    cli_version: 0.21.4
+    framework: huggingface
+    huggingface_version: 4.53.3
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1764979959
+    t:
+      1:
+      - 1
+      - 11
+      - 41
+      - 49
+      - 51
+      - 71
+      - 83
+      2:
+      - 1
+      - 11
+      - 41
+      - 49
+      - 51
+      - 71
+      - 83
+      3:
+      - 13
+      - 15
+      - 16
+      - 42
+      - 61
+      4: 3.12.3
+      5: 0.21.4
+      6: 4.53.3
+      10:
+      - 21
+      13: linux-x86_64
+    e:
+      7ku6alpm4zvouwujiqpab66lhpa4exko:
+        os: Linux-6.1.0-39-amd64-x86_64-with-glibc2.39
+        python: CPython 3.12.3
+        started_at: '2025-12-06T00:12:39.005715Z'
+        args:
+        - --dataset.repo_id=AmdRamen/mission1_record_edited
+        - --policy.type=act
+        - --output_dir=outputs/train/mission1_act_so101
+        - --job_name=mission1_act_so101
+        - --policy.device=cuda
+        - --wandb.enable=True
+        - --policy.repo_id=AmdRamen/mission1_model
+        - --policy.push_to_hub=True
+        program: /opt/venv/bin/lerobot-train
+        root: outputs/train/mission1_act_so101
+        host: robotics-jupyter-launcher-5144
+        executable: /opt/venv/bin/python
+        cpu_count: 160
+        cpu_count_logical: 160
+        gpu_type: AMD Instinct MI300X VF
+        gpu_count: 1
+        disk:
+          /:
+            total: '2162185003008'
+            used: '932675117056'
+        memory:
+          total: '2029207175168'
+        gpu_amd:
+        - id: '0'
+          unique_id: '0x2d311e41de759e31'
+          vbios_version: 113-M3000100-103
+          performance_level: auto
+          max_power: '750.0'
+          series: AMD Instinct MI300X VF
+          model: '0x74b5'
+          vendor: Advanced Micro Devices, Inc. [AMD/ATI]
+          sku: M3000100
+          sclk_range: 500Mhz - 2100Mhz
+          mclk_range: 900Mhz - 1300Mhz
+        writer_id: 7ku6alpm4zvouwujiqpab66lhpa4exko
+dataset:
+  desc: null
+  value:
+    repo_id: AmdRamen/mission1_record_edited
+    root: null
+    episodes: null
+    image_transforms:
+      enable: false
+      max_num_transforms: 3
+      random_order: false
+      tfs:
+        brightness:
+          weight: 1.0
+          type: ColorJitter
+          kwargs:
+            brightness:
+            - 0.8
+            - 1.2
+        contrast:
+          weight: 1.0
+          type: ColorJitter
+          kwargs:
+            contrast:
+            - 0.8
+            - 1.2
+        saturation:
+          weight: 1.0
+          type: ColorJitter
+          kwargs:
+            saturation:
+            - 0.5
+            - 1.5
+        hue:
+          weight: 1.0
+          type: ColorJitter
+          kwargs:
+            hue:
+            - -0.05
+            - 0.05
+        sharpness:
+          weight: 1.0
+          type: SharpnessJitter
+          kwargs:
+            sharpness:
+            - 0.5
+            - 1.5
+        affine:
+          weight: 1.0
+          type: RandomAffine
+          kwargs:
+            degrees:
+            - -5.0
+            - 5.0
+            translate:
+            - 0.05
+            - 0.05
+    revision: null
+    use_imagenet_stats: true
+    video_backend: torchcodec
+    streaming: false
+env:
+  desc: null
+  value: null
+policy:
+  desc: null
+  value:
+    type: act
+    n_obs_steps: 1
+    input_features: {}
+    output_features: {}
+    device: cuda
+    use_amp: false
+    push_to_hub: true
+    repo_id: AmdRamen/mission1_model
+    private: null
+    tags: null
+    license: null
+    pretrained_path: null
+    chunk_size: 100
+    n_action_steps: 100
+    normalization_mapping:
+      VISUAL: MEAN_STD
+      STATE: MEAN_STD
+      ACTION: MEAN_STD
+    vision_backbone: resnet18
+    pretrained_backbone_weights: ResNet18_Weights.IMAGENET1K_V1
+    replace_final_stride_with_dilation: false
+    pre_norm: false
+    dim_model: 512
+    n_heads: 8
+    dim_feedforward: 3200
+    feedforward_activation: relu
+    n_encoder_layers: 4
+    n_decoder_layers: 1
+    use_vae: true
+    latent_dim: 32
+    n_vae_encoder_layers: 4
+    temporal_ensemble_coeff: null
+    dropout: 0.1
+    kl_weight: 10.0
+    optimizer_lr: 1.0e-05
+    optimizer_weight_decay: 0.0001
+    optimizer_lr_backbone: 1.0e-05
+output_dir:
+  desc: null
+  value: outputs/train/mission1_act_so101
+job_name:
+  desc: null
+  value: mission1_act_so101
+resume:
+  desc: null
+  value: false
+seed:
+  desc: null
+  value: 1000
+num_workers:
+  desc: null
+  value: 4
+batch_size:
+  desc: null
+  value: 8
+steps:
+  desc: null
+  value: 100000
+eval_freq:
+  desc: null
+  value: 20000
+log_freq:
+  desc: null
+  value: 200
+save_checkpoint:
+  desc: null
+  value: true
+save_freq:
+  desc: null
+  value: 20000
+use_policy_training_preset:
+  desc: null
+  value: true
+optimizer:
+  desc: null
+  value:
+    type: adamw
+    lr: 1.0e-05
+    weight_decay: 0.0001
+    grad_clip_norm: 10.0
+    betas:
+    - 0.9
+    - 0.999
+    eps: 1.0e-08
+scheduler:
+  desc: null
+  value: null
+eval:
+  desc: null
+  value:
+    n_episodes: 50
+    batch_size: 50
+    use_async_envs: false
+wandb:
+  desc: null
+  value:
+    enable: true
+    disable_artifact: false
+    project: lerobot
+    entity: null
+    notes: null
+    run_id: null
+    mode: null
+checkpoint_path:
+  desc: null
+  value: null
+rename_map:
+  desc: null
+  value: {}
