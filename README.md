@@ -20,8 +20,7 @@ SO101ロボットアームを使用し、机上に散在するごみを認識・
 
 画像認識AI（YOLO）が対象物を瞬時に検知し、その物体の種類に応じた個別の動作モデル（ACT）を動的に呼び出すことで、複数の異なるアイテムを連続的かつ正確に処理するシステムを実現しています。
 
-<video src="./assets/movies/ramen_amd_20251207_01.mp4" width="500" controls>
-</video>
+https://github.com/RamenAMDHackathon/AMD_Robotics_Hackathon_2025_NARUTO/edit/main/assets/movies/ramen_amd_20251207_01.mp4
 
 ---
 
