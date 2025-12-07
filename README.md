@@ -84,7 +84,7 @@ CONF=0.5 RUN_MODE=production python manager.py
 ```
 
 
-Delivery URL
+# Additional Links
 
 Cup
 Dataset:https://huggingface.co/datasets/AmdRamen/mission2_record_cup_clean
@@ -93,3 +93,238 @@ Model:https://huggingface.co/AmdRamen/mission2_cup_clean
 Bottle
 Dataset:https://huggingface.co/datasets/AmdRamen/mission2_record_bottle_clean
 Model:https://huggingface.co/AmdRamen/mission2_bottle_clean
+
+# Code submission
+```
+AMD_Robotics_Hackathon_2025_NARUTO/
+│
+├── README.md
+│
+├── assets/
+│   └── images/
+│
+├── mission1/
+│   └── 
+│
+└── mission2/
+    └── (manager.py等を含むと推定)
+```
+
+```
+.
+.
+    AMD_Robotics_Hackathon_2025_NARUTO
+        mission1
+            code
+                create_dataset.sh
+                edit_dataset.sh
+                evaluate.sh
+                training.sh
+            wandb
+                debug-internal.log
+                run-20251206_001239-iwarsqft
+                    logs
+                        debug-internal.log
+                        debug.log
+                        debug-core.log
+                    files
+                        requirements.txt
+                        output.log
+                        config.yaml
+                        wandb-summary.json
+                        wandb-metadata.json
+                    run-iwarsqft.wandb.synced
+                    run-iwarsqft.wandb
+                debug-cli.root.log
+                debug.log
+                latest-run
+                    logs
+                        debug-internal.log
+                        debug.log
+                        debug-core.log
+                    files
+                        requirements.txt
+                        output.log
+                        config.yaml
+                        wandb-summary.json
+                        wandb-metadata.json
+                    run-iwarsqft.wandb.synced
+                    run-iwarsqft.wandb
+        README.md
+        mission2
+            code
+                bottle_training
+                    create_dataset.sh
+                    continue_create_dataset.sh
+                    training_nvidia_N15.sh
+                    edit_dataset.sh
+                    training_pi05.sh
+                    training_nvidia_XVLA.sh
+                    training_act.sh
+                    training_pi0.sh
+                    training_smolvla.sh
+                push_to_hub.py
+                check_dataset.py
+                fix_dataset_task.py
+                dataset_merge.sh
+                merge_training.sh
+                yolo_training
+                    yolo_training.py
+                    yolo_model
+                        yolo11s_bottle_cup_all.pt
+                        yolo11n_bottle_cup_all.pt
+                        yolo11m_bottle_cup.pt
+                    yolo_dataset
+                        images
+                            .DS_Store
+                            train
+                                6932e1f9-IMG_1833.png
+                                77f011b2-IMG_1840.png
+                                6f9ab418-IMG_1834.png
+                                25035c69-IMG_1836.png
+                                848b3fc6-IMG_1841.png
+                                0d74073c-IMG_1838.png
+                                40438cde-IMG_1835.png
+                                9901eed1-IMG_1839.png
+                            val
+                                ba5f0953-IMG_1832.png
+                                d5dbeab6-IMG_1837.png
+                        labels
+                            .DS_Store
+                            train
+                                6f9ab418-IMG_1834.txt
+                                25035c69-IMG_1836.txt
+                                848b3fc6-IMG_1841.txt
+                                6932e1f9-IMG_1833.txt
+                                77f011b2-IMG_1840.txt
+                                0d74073c-IMG_1838.txt
+                                9901eed1-IMG_1839.txt
+                                40438cde-IMG_1835.txt
+                            val
+                                d5dbeab6-IMG_1837.txt
+                                ba5f0953-IMG_1832.txt
+                        data.yaml
+                    yolo_training_all.py
+                scripts
+                    requirements.md
+                    garbage_sort_yolo.py
+                    run_task.sh
+                    homereset.py
+                    log_legacy.py
+                    config.yaml
+                    README.md
+                    log.txt
+                    manager.py
+                    check_camera.py
+                cup_training
+                    create_dataset.sh
+                    continue_create_dataset.sh
+                    training.sh
+            wandb
+                cup_model
+                    debug-internal.log
+                    run-20251207_041246-bfwlb645
+                        logs
+                            debug-internal.log
+                            debug.log
+                            debug-core.log
+                        run-bfwlb645.wandb
+                        files
+                            requirements.txt
+                            output.log
+                            config.yaml
+                            wandb-summary.json
+                            wandb-metadata.json
+                    debug.log
+                    latest-run
+                        logs
+                            debug-internal.log
+                            debug.log
+                            debug-core.log
+                        run-bfwlb645.wandb
+                        files
+                            requirements.txt
+                            output.log
+                            config.yaml
+                            wandb-summary.json
+                            wandb-metadata.json
+                bottle_model
+                    debug-internal.log
+                    debug.log
+                    latest-run
+                        logs
+                            debug-internal.log
+                            debug.log
+                            debug-core.log
+                        files
+                            requirements.txt
+                            output.log
+                            config.yaml
+                            wandb-summary.json
+                            wandb-metadata.json
+                        run-86qwm99j.wandb
+                    run-20251207_030827-86qwm99j
+                        logs
+                            debug-internal.log
+                            debug.log
+                            debug-core.log
+                        files
+                            requirements.txt
+                            output.log
+                            config.yaml
+                            wandb-summary.json
+                            wandb-metadata.json
+                        run-86qwm99j.wandb
+        .git
+            config
+            objects
+                pack
+                    pack-48e3bee53d0fd5c51d689c413a6f1270b3dd1b34.rev
+                    pack-48e3bee53d0fd5c51d689c413a6f1270b3dd1b34.idx
+                    pack-48e3bee53d0fd5c51d689c413a6f1270b3dd1b34.pack
+                info
+            HEAD
+            info
+                exclude
+            logs
+                HEAD
+                refs
+                    heads
+                        main
+                    remotes
+                        origin
+                            HEAD
+            description
+            hooks
+                commit-msg.sample
+                pre-rebase.sample
+                sendemail-validate.sample
+                pre-commit.sample
+                applypatch-msg.sample
+                fsmonitor-watchman.sample
+                pre-receive.sample
+                prepare-commit-msg.sample
+                post-update.sample
+                pre-merge-commit.sample
+                pre-applypatch.sample
+                pre-push.sample
+                update.sample
+                push-to-checkout.sample
+            refs
+                heads
+                    main
+                tags
+                remotes
+                    origin
+                        HEAD
+            index
+            packed-refs
+        assets
+            images
+                ramen_kizai.jpg
+                ramen_system_flow.png
+            movies
+                ramen_amd_20251207_01.mp4
+                ramen_amd_20251206_01.mp4
+    tree.txt
+```
