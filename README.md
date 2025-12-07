@@ -81,17 +81,16 @@ SO101、俯瞰カメラ,横からのカメラ、ライト、マット、PC
 実運用モード（Production）にて、信頼度閾値（CONF）を設定しマネージャープログラムを起動します。
 
 ```bash
-CONF=0.5 RUN_MODE=production .venv/bin/python manager.py
+CONF=0.5 RUN_MODE=production python manager.py
 ```
 
 
 Delivery URL
 
 Cup
-Dataset:https://huggingface.co/datasets/AmdRamen/mission2_record_cup
-Model:https://huggingface.co/AmdRamen/mission2_cup
+Dataset:https://huggingface.co/datasets/AmdRamen/mission2_record_cup_clean
+Model:https://huggingface.co/AmdRamen/mission2_cup_clean
 
 Bottle
-Dataset:https://huggingface.co/datasets/AmdRamen/mission2_record_bottle
-Excluded Dataset:https://huggingface.co/datasets/AmdRamen/mission2_record_bottle_edited
-Model:https://huggingface.co/AmdRamen/mission2_bottle
+Dataset:https://huggingface.co/datasets/AmdRamen/mission2_record_bottle_clean
+Model:https://huggingface.co/AmdRamen/mission2_bottle_clean
