@@ -36,7 +36,7 @@ system:
 
 # YOLOの推論設定（検証時の可視化/感度調整に使用）
 yolo:
-  weights: "yolo11s.pt"   # 必要に応じて yolov8s.pt などへ変更
+  weights: "/AMD_Robotics_Hackathon_2025_NARUTO/mission2/code/yolo_training/yolo_model/yolo11s_bottle_cup_all.pt"   # 必要に応じて yolov8s.pt などへ変更
   conf: 0.35              # 低めに設定して検出しやすく（誤検出が多ければ上げる）
   imgsz: 1280            # 入力解像度（小物・俯瞰なら 960~1280 も検討）
   draw_all: true          # ターゲット以外も可視化（検証用）
