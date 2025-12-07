@@ -1,0 +1,39 @@
+Refactor analysis (functions flow and unused list)
+Date: 2025-12-07
+
+Entry point and call flow (manager.py)
+- __main__: calls `TaskManager().run()`
+- TaskManager.__init__:
+  - `_load_config()`
+  - Device selection via `get_best_device()`
+  - Initialize YOLO model: `YOLO(self.weights)` then `.to(self.device)`
+  - Build `class_names` map from model
+- TaskManager.run:
+  - `open_camera()` to get a `cv2.VideoCapture`
+  - Frame loop per tick:
+    - `draw_frame_with_status(frame, ...)`
+    - `detect_targets(frame)`
+    - If `draw_all`:
+      - `detect_all(frame)`
+      - `draw_bboxes(frame, all_dets)`
+    - When a target is present and the 20s ticker fires:
+      - Release camera and `cv2.destroyAllWindows()`
+      - `cleanup_eval_outputs()`
+      - `apply_initial_pose_if_possible()` → `run_home_reset_script()`
+      - If dry-run: append command line to `task_runs.log`
+      - Else: run `subprocess.run(["bash", "run_task.sh", ...])`
+      - Re-open camera: `open_camera()`
+
+Functions used by manager.py
+- Module-level: `get_best_device`
+- TaskManager methods: `_load_config`, `open_camera`, `detect_targets`, `detect_all`, `draw_bboxes`, `draw_frame_with_status`, `cleanup_eval_outputs`, `apply_initial_pose_if_possible`, `run_home_reset_script`, `run`
+
+Functions removed/unused
+- manager.py: `TaskManager._build_init_pose_vector_deg` (deprecated; no references)
+- manager.py: `TaskManager.apply_initial_pose_python` (deprecated; no references)
+- manager.py: `find_target_in_frame` was already commented out
+
+Notes
+- Homing: manager calls `apply_initial_pose_if_possible()` which runs `home_reset_script`（config.yaml、既定は homereset.py）。runner がない場合はスキップします。
+- YOLO weights default in manager.py: `yolov11n.pt`. Configure via `yolo.weights` in `config.yaml` or `WEIGHTS` env var.
+- Dry-run outputs go to `task_runs.log` (not this file).

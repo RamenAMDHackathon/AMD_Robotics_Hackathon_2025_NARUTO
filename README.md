@@ -10,7 +10,7 @@
 | :--- | :--- |
 | **Team Number** | 18 |
 | **Team Name** | RAMEN |
-| **Members** | Fumiaki Hara, Keisuke Otani, Y Nakamura, Masamichi Nisiwaki |
+| **Members** | Fumitaka Hara, Keisuke Otani, Y Nakamura, Masamichi Nisiwaki |
 
 ---
 
