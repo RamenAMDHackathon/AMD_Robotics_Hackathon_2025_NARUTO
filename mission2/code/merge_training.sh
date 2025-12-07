@@ -1,0 +1,11 @@
+lerobot-train \
+  --dataset.repo_id=AmdRamen/mission2_record_merged \
+  --policy.type=act \
+  --output_dir=outputs/train/mission2_merge \
+  --job_name=mission2_merge \
+  --policy.device=cuda \
+  --wandb.enable=True \
+  --policy.repo_id=AmdRamen/mission2_merge \
+  --policy.push_to_hub=True \
+  --wandb.entity=amd_hackathon_ramen \
+  --wandb.project=mission2_bottle  

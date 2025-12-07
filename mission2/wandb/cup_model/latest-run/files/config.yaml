@@ -2,24 +2,24 @@ _wandb:
     value:
         cli_version: 0.21.4
         e:
-            dk9bydxp8tatlmtcop9dk50sahdc5s1p:
+            mlhx2h20aq95loay28q0m77wfmos3tbf:
                 args:
-                    - --dataset.repo_id=AmdRamen/mission2_record_cup
+                    - --dataset.repo_id=AmdRamen/mission2_record_cup_clean
                     - --policy.type=act
-                    - --output_dir=outputs/train/misson2_cup
-                    - --job_name=misson2_cup
+                    - --output_dir=outputs/train/mission2_cup_clean
+                    - --job_name=mission2_cup_clean
                     - --policy.device=cuda
                     - --wandb.enable=True
-                    - --policy.repo_id=AmdRamen/misson2_cup
+                    - --policy.repo_id=AmdRamen/mission2_cup_clean
                     - --policy.push_to_hub=True
                     - --wandb.entity=amd_hackathon_ramen
-                    - --wandb.project=mission2_cup
+                    - --wandb.project=mission2_cup_clean
                 cpu_count: 160
                 cpu_count_logical: 160
                 disk:
                     /:
                         total: "2162185003008"
-                        used: "938792599552"
+                        used: "910842646528"
                 executable: /opt/venv/bin/python
                 gpu: AMD Instinct MI300X VF
                 gpu_amd:
@@ -31,25 +31,24 @@ _wandb:
                       sclkRange: 500Mhz - 2100Mhz
                       series: AMD Instinct MI300X VF
                       sku: M3000100
-                      uniqueId: "0x2d311e41de759e31"
+                      uniqueId: "0xcc07fb4719633876"
                       vbiosVersion: 113-M3000100-103
                       vendor: Advanced Micro Devices, Inc. [AMD/ATI]
                 gpu_count: 1
-                host: robotics-jupyter-launcher-5144
+                host: robotics-jupyter-launcher-4360
                 memory:
-                    total: "2029207175168"
+                    total: "2029207171072"
                 os: Linux-6.1.0-39-amd64-x86_64-with-glibc2.39
                 program: /opt/venv/bin/lerobot-train
                 python: CPython 3.12.3
-                root: outputs/train/misson2_cup
-                startedAt: "2025-12-06T08:16:37.558538Z"
-                writerId: dk9bydxp8tatlmtcop9dk50sahdc5s1p
+                root: outputs/train/mission2_cup_clean
+                startedAt: "2025-12-07T04:12:46.120427Z"
+                writerId: mlhx2h20aq95loay28q0m77wfmos3tbf
         m: []
         python_version: 3.12.3
         t:
             "1":
                 - 1
-                - 11
                 - 41
                 - 49
                 - 51
@@ -57,7 +56,6 @@ _wandb:
                 - 83
             "2":
                 - 1
-                - 11
                 - 41
                 - 49
                 - 51
@@ -70,7 +68,6 @@ _wandb:
                 - 61
             "4": 3.12.3
             "5": 0.21.4
-            "6": 4.53.3
             "10":
                 - 21
             "12": 0.21.4
@@ -132,7 +129,7 @@ dataset:
                             - 1.5
                     type: SharpnessJitter
                     weight: 1
-        repo_id: AmdRamen/mission2_record_cup
+        repo_id: AmdRamen/mission2_record_cup_clean
         revision: null
         root: null
         streaming: false
@@ -148,7 +145,7 @@ eval:
 eval_freq:
     value: 20000
 job_name:
-    value: misson2_cup
+    value: mission2_cup_clean
 log_freq:
     value: 200
 num_workers:
@@ -164,7 +161,7 @@ optimizer:
         type: adamw
         weight_decay: 0.0001
 output_dir:
-    value: outputs/train/misson2_cup
+    value: outputs/train/mission2_cup_clean
 policy:
     value:
         chunk_size: 100
@@ -195,7 +192,7 @@ policy:
         private: null
         push_to_hub: true
         replace_final_stride_with_dilation: false
-        repo_id: AmdRamen/misson2_cup
+        repo_id: AmdRamen/mission2_cup_clean
         tags: null
         temporal_ensemble_coeff: null
         type: act
@@ -223,5 +220,5 @@ wandb:
         entity: amd_hackathon_ramen
         mode: null
         notes: null
-        project: mission2_cup
+        project: mission2_cup_clean
         run_id: null

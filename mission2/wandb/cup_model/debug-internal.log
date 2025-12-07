@@ -1,11 +1,11 @@
-{"time":"2025-12-06T08:16:37.767683745Z","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
-{"time":"2025-12-06T08:16:38.036835992Z","level":"INFO","msg":"stream: created new stream","id":"hd8j0lcm"}
-{"time":"2025-12-06T08:16:38.036877949Z","level":"INFO","msg":"stream: started","id":"hd8j0lcm"}
-{"time":"2025-12-06T08:16:38.03691132Z","level":"INFO","msg":"handler: started","stream_id":"hd8j0lcm"}
-{"time":"2025-12-06T08:16:38.036924702Z","level":"INFO","msg":"writer: started","stream_id":"hd8j0lcm"}
-{"time":"2025-12-06T08:16:38.036947203Z","level":"INFO","msg":"sender: started","stream_id":"hd8j0lcm"}
-{"time":"2025-12-06T09:37:25.671056198Z","level":"INFO","msg":"stream: closing","id":"hd8j0lcm"}
-{"time":"2025-12-06T09:37:28.272839427Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
-{"time":"2025-12-06T09:37:28.395519339Z","level":"INFO","msg":"handler: closed","stream_id":"hd8j0lcm"}
-{"time":"2025-12-06T09:37:28.395593406Z","level":"INFO","msg":"sender: closed","stream_id":"hd8j0lcm"}
-{"time":"2025-12-06T09:37:28.39561284Z","level":"INFO","msg":"stream: closed","id":"hd8j0lcm"}
+{"time":"2025-12-07T04:12:46.329140246Z","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-12-07T04:12:46.623666888Z","level":"INFO","msg":"stream: created new stream","id":"bfwlb645"}
+{"time":"2025-12-07T04:12:46.623696562Z","level":"INFO","msg":"stream: started","id":"bfwlb645"}
+{"time":"2025-12-07T04:12:46.623709142Z","level":"INFO","msg":"writer: started","stream_id":"bfwlb645"}
+{"time":"2025-12-07T04:12:46.623719682Z","level":"INFO","msg":"handler: started","stream_id":"bfwlb645"}
+{"time":"2025-12-07T04:12:46.623749593Z","level":"INFO","msg":"sender: started","stream_id":"bfwlb645"}
+{"time":"2025-12-07T05:35:14.144323209Z","level":"INFO","msg":"stream: closing","id":"bfwlb645"}
+{"time":"2025-12-07T05:35:16.955849009Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-07T05:35:17.06895986Z","level":"INFO","msg":"handler: closed","stream_id":"bfwlb645"}
+{"time":"2025-12-07T05:35:17.069023625Z","level":"INFO","msg":"sender: closed","stream_id":"bfwlb645"}
+{"time":"2025-12-07T05:35:17.069029118Z","level":"INFO","msg":"stream: closed","id":"bfwlb645"}
